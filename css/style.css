@@ -5,3 +5,86 @@
     box-sizing: border-box;
 }
 
+/* Common */
+html{
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:visited{
+    color: black;
+}
+
+/* Nav */
+nav{
+    position: fixed;
+    top: 30px;
+    right: 10px;
+    z-index: 200;
+
+}
+
+li{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 2em;
+    color: black;
+}
+
+/* Main */
+section{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+#primo{
+    background-color: red;
+}
+
+#secondo{
+    background-color: green;
+}
+
+#terzo{
+    background-color: yellow;
+}
+
+.product{
+    width: 30%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.product h2{
+    font-size: 4em;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    color: yellow;
+}
+
+.product.third h2{
+    color:green;
+}
+
+section img{
+    width: 100%;
+    object-fit: cover;
+}
